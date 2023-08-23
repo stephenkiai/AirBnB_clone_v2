@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Console Module """
+""" Console Module. """
 import cmd
 import sys
 from models.base_model import BaseModel
@@ -67,7 +67,7 @@ class HBNBCommand(cmd.Cmd):
                 # isolate _id, stripping quotes
                 _id = pline[0].replace('\"', '')
                 # possible bug here:
-                # empty quotes register as empty _id when replaced
+                # empty quotes register as empty _id when replaced.
 
                 # if arguments exist beyond _id
                 pline = pline[2].strip()  # pline is now str
@@ -149,7 +149,7 @@ class HBNBCommand(cmd.Cmd):
         print(new_instance.id)
 
     def help_create(self):
-        """ Help information for the create method """
+        """ Help info for create method """
         print("Creates a class of any type")
         print("[Usage]: create <className>\n")
 
@@ -182,7 +182,7 @@ class HBNBCommand(cmd.Cmd):
             print("** no instance found **")
 
     def help_show(self):
-        """ Help information for the show command """
+        """ Help info for the show command """
         print("Shows an individual instance of a class")
         print("[Usage]: show <className> <objectId>\n")
 
@@ -215,7 +215,7 @@ class HBNBCommand(cmd.Cmd):
             print("** no instance found **")
 
     def help_destroy(self):
-        """ Help information for the destroy command """
+        """ Help info for the destroy command """
         print("Destroys an individual instance of a class")
         print("[Usage]: destroy <className> <objectId>\n")
 
@@ -238,7 +238,7 @@ class HBNBCommand(cmd.Cmd):
         print(print_list)
 
     def help_all(self):
-        """ Help information for the all command """
+        """ Help info for the all command """
         print("Shows all objects, or all of a class")
         print("[Usage]: all <className>\n")
 
