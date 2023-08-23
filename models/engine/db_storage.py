@@ -2,9 +2,9 @@
 """module that defines a class to manage airbnb clone"""
 from models.base_model import BaseModel, Base
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import scoped_session
+from sqlalchemy.ext.declarative import declarative_base
 from os import getenv
 from models.user import User
 from models.state import State
