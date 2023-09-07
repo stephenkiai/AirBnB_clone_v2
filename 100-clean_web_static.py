@@ -3,6 +3,9 @@
     Fabric script (based on the file 3-deploy_web_static.py)
     that deletes out-of-date archives, using the function do_clean
 """
+from fabric.api import *
+
+
 env.hosts = ['52.91.202.128', '54.197.207.49']
 env.user = "ubuntu"
 
